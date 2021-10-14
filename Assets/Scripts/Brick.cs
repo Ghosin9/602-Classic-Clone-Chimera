@@ -8,8 +8,11 @@ public class Brick : MonoBehaviour
   private float currentHealth;
   private Color changeColor;
   private SpriteRenderer mainColor;
+  private Color keepColor;
     public GameObject p;
     public GameObject powerUp;
+
+    public GameManager gm;
 
 
 
@@ -18,6 +21,7 @@ public class Brick : MonoBehaviour
   {
     //sprite = GetComponent<SpriteRenderer>().color.a;
     mainColor = GetComponent<SpriteRenderer>();
+    keepColor = mainColor.color;
     setHeath();
   }
   private void setHeath() {
@@ -34,6 +38,8 @@ public class Brick : MonoBehaviour
             } else {
               powerUp.GetComponent<PowerUp>().RandomizePosition(0.0f);
             }
+
+            gm.resetBrickColor(p.GetComponent<PlayerController>().playerNum);
         }
     currentHealth--;
 
@@ -52,5 +58,9 @@ public class Brick : MonoBehaviour
       lowerHealth();
     }
 
+  }
+
+  public void resetColor(){
+    mainColor.color = keepColor;
   }
 }

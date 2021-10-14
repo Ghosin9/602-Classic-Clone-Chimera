@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     [Header("Players")]
     public GameObject player1;
     public GameObject player2;
-    // public bool ballPowerUp;
-    // public bool ballPowerUp;
 
     [Header("Goals")]
     public GameObject player1Goal;
@@ -25,10 +23,18 @@ public class GameManager : MonoBehaviour
     [Header("GameOverText")]
     public GameObject gameOverText;
 
+    [Header("Bricks")]
+    public GameObject[] player1Bricks;
+    public GameObject[] player2Bricks;
+
+    [Header("Color")]
+    public Color powerUpColor;
+
     //private ints to keep track of score
     private int player1Score;
     private int player2Score;
 
+    [Header("GameOver")]
     //bool for game over
     public bool gameOver;
 
@@ -69,5 +75,33 @@ public class GameManager : MonoBehaviour
         player1Text.GetComponent<Text>().text = player1Score.ToString();
         player2Text.GetComponent<Text>().text = player2Score.ToString();
         ball.GetComponent<Ball>().Launch();
+    }
+
+    public void powerUpBricks(bool playerNum){
+        if (!playerNum){
+            foreach(GameObject brick in player1Bricks){
+                if (brick != null)
+                    brick.GetComponent<SpriteRenderer>().color = powerUpColor;
+            }
+        } else {
+            foreach(GameObject brick in player2Bricks){
+                if (brick != null)
+                    brick.GetComponent<SpriteRenderer>().color = powerUpColor;
+            }
+        }
+    }
+
+    public void resetBrickColor(bool playerNum){
+        if (!playerNum){
+            foreach(GameObject brick in player1Bricks){
+                if (brick != null)
+                    brick.GetComponent<Brick>().resetColor();
+            }
+        } else {
+            foreach(GameObject brick in player2Bricks){
+                if (brick != null)
+                    brick.GetComponent<Brick>().resetColor();
+            }
+        }
     }
 }
