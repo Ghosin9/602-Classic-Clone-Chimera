@@ -170,6 +170,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &42387772
 Rigidbody2D:
   serializedVersion: 4
@@ -388,6 +389,7 @@ MonoBehaviour:
   health: 3
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &108841784
 Rigidbody2D:
   serializedVersion: 4
@@ -536,6 +538,33 @@ MonoBehaviour:
   player1Text: {fileID: 487849041}
   player2Text: {fileID: 816461720}
   gameOverText: {fileID: 919670378}
+  player1Bricks:
+  - {fileID: 1221996419}
+  - {fileID: 2002058681}
+  - {fileID: 1431651808}
+  - {fileID: 151058804}
+  - {fileID: 2041869128}
+  - {fileID: 1523557738}
+  - {fileID: 1351395673}
+  - {fileID: 1383642185}
+  - {fileID: 403618212}
+  - {fileID: 731563476}
+  - {fileID: 108841781}
+  - {fileID: 399488988}
+  player2Bricks:
+  - {fileID: 1281165307}
+  - {fileID: 649995920}
+  - {fileID: 935667099}
+  - {fileID: 679393304}
+  - {fileID: 42387769}
+  - {fileID: 212468705}
+  - {fileID: 1052401113}
+  - {fileID: 1519150694}
+  - {fileID: 1374486808}
+  - {fileID: 528553267}
+  - {fileID: 2069354865}
+  - {fileID: 347869171}
+  powerUpColor: {r: 0, g: 0, b: 1, a: 1}
   gameOver: 0
 --- !u!1 &151058804
 GameObject:
@@ -636,6 +665,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &151058808
 Rigidbody2D:
   serializedVersion: 4
@@ -732,6 +762,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &212468708
 Rigidbody2D:
   serializedVersion: 4
@@ -914,6 +945,7 @@ MonoBehaviour:
   health: 3
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &347869174
 Rigidbody2D:
   serializedVersion: 4
@@ -1132,6 +1164,7 @@ MonoBehaviour:
   health: 3
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &399488991
 Rigidbody2D:
   serializedVersion: 4
@@ -1278,6 +1311,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &403618215
 Rigidbody2D:
   serializedVersion: 4
@@ -1846,6 +1880,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &528553270
 Rigidbody2D:
   serializedVersion: 4
@@ -2145,6 +2180,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &649995923
 Rigidbody2D:
   serializedVersion: 4
@@ -2291,6 +2327,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &679393307
 Rigidbody2D:
   serializedVersion: 4
@@ -2576,6 +2613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridArea1: {fileID: 1468198835}
   gridArea2: {fileID: 1512407724}
+  gm: {fileID: 109309088}
 --- !u!61 &720890692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2715,6 +2753,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &731563479
 Rigidbody2D:
   serializedVersion: 4
@@ -3089,6 +3128,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &935667102
 Rigidbody2D:
   serializedVersion: 4
@@ -3235,6 +3275,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1052401116
 Rigidbody2D:
   serializedVersion: 4
@@ -3744,6 +3785,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1221996423
 Rigidbody2D:
   serializedVersion: 4
@@ -3906,6 +3948,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1281165310
 Rigidbody2D:
   serializedVersion: 4
@@ -4160,6 +4203,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1351395676
 Rigidbody2D:
   serializedVersion: 4
@@ -4306,6 +4350,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1374486811
 Rigidbody2D:
   serializedVersion: 4
@@ -4452,6 +4497,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1383642188
 Rigidbody2D:
   serializedVersion: 4
@@ -4682,6 +4728,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1431651812
 Rigidbody2D:
   serializedVersion: 4
@@ -4892,6 +4939,7 @@ MonoBehaviour:
   health: 2
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1519150697
 Rigidbody2D:
   serializedVersion: 4
@@ -5088,6 +5136,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &1523557742
 Rigidbody2D:
   serializedVersion: 4
@@ -5514,6 +5563,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &2002058685
 Rigidbody2D:
   serializedVersion: 4
@@ -5660,6 +5710,7 @@ MonoBehaviour:
   health: 1
   p: {fileID: 611475444}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &2041869132
 Rigidbody2D:
   serializedVersion: 4
@@ -5756,6 +5807,7 @@ MonoBehaviour:
   health: 3
   p: {fileID: 471845796}
   powerUp: {fileID: 720890690}
+  gm: {fileID: 109309088}
 --- !u!50 &2069354868
 Rigidbody2D:
   serializedVersion: 4

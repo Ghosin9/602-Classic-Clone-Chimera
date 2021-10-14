@@ -8,6 +8,8 @@ public class PowerUp : MonoBehaviour
     public BoxCollider2D gridArea1;
     public BoxCollider2D gridArea2;
 
+    public GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,7 @@ public class PowerUp : MonoBehaviour
             // move ball off camera, then call respawn
             this.transform.position = new Vector3(10.0f, 10.0f, 0.0f);
             collider.GetComponent<PlayerController>().isPoweredUp = true;
+            gm.powerUpBricks(collider.GetComponent<PlayerController>().playerNum);
             // StartCoroutine(RespawnPowerUp());
         }
     }
