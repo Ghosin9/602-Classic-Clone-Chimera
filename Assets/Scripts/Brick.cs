@@ -9,6 +9,7 @@ public class Brick : MonoBehaviour
   private Color changeColor;
   private SpriteRenderer mainColor;
     public GameObject p;
+    public GameObject powerUp;
 
 
 
@@ -27,6 +28,12 @@ public class Brick : MonoBehaviour
         {
             currentHealth = 0;
             p.GetComponent<PlayerController>().isPoweredUp = false;
+            //respawn powerup
+            if (p.GetComponent<PlayerController>().playerNum){
+              powerUp.GetComponent<PowerUp>().RandomizePosition(1.0f);
+            } else {
+              powerUp.GetComponent<PowerUp>().RandomizePosition(0.0f);
+            }
         }
     currentHealth--;
 

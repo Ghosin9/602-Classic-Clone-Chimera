@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &42387772
 Rigidbody2D:
   serializedVersion: 4
@@ -385,7 +386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &108841784
 Rigidbody2D:
   serializedVersion: 4
@@ -632,7 +634,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &151058808
 Rigidbody2D:
   serializedVersion: 4
@@ -728,6 +731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &212468708
 Rigidbody2D:
   serializedVersion: 4
@@ -909,6 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &347869174
 Rigidbody2D:
   serializedVersion: 4
@@ -1125,7 +1130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &399488991
 Rigidbody2D:
   serializedVersion: 4
@@ -1270,7 +1276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &403618215
 Rigidbody2D:
   serializedVersion: 4
@@ -1838,6 +1845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &528553270
 Rigidbody2D:
   serializedVersion: 4
@@ -2136,6 +2144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &649995923
 Rigidbody2D:
   serializedVersion: 4
@@ -2281,6 +2290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &679393307
 Rigidbody2D:
   serializedVersion: 4
@@ -2546,7 +2556,7 @@ GameObject:
   - component: {fileID: 720890692}
   - component: {fileID: 720890691}
   m_Layer: 0
-  m_Name: PowerUpPlayer2
+  m_Name: PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2703,7 +2713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &731563479
 Rigidbody2D:
   serializedVersion: 4
@@ -3077,6 +3088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &935667102
 Rigidbody2D:
   serializedVersion: 4
@@ -3222,6 +3234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1052401116
 Rigidbody2D:
   serializedVersion: 4
@@ -3729,7 +3742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1221996423
 Rigidbody2D:
   serializedVersion: 4
@@ -3891,6 +3905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1281165310
 Rigidbody2D:
   serializedVersion: 4
@@ -4143,7 +4158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1351395676
 Rigidbody2D:
   serializedVersion: 4
@@ -4289,6 +4305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1374486811
 Rigidbody2D:
   serializedVersion: 4
@@ -4433,7 +4450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1383642188
 Rigidbody2D:
   serializedVersion: 4
@@ -4662,7 +4680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1431651812
 Rigidbody2D:
   serializedVersion: 4
@@ -4872,6 +4891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1519150697
 Rigidbody2D:
   serializedVersion: 4
@@ -5066,7 +5086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &1523557742
 Rigidbody2D:
   serializedVersion: 4
@@ -5491,7 +5512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &2002058685
 Rigidbody2D:
   serializedVersion: 4
@@ -5636,7 +5658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  p: {fileID: 471845796}
+  p: {fileID: 611475444}
+  powerUp: {fileID: 720890690}
 --- !u!50 &2041869132
 Rigidbody2D:
   serializedVersion: 4
@@ -5732,6 +5755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   p: {fileID: 471845796}
+  powerUp: {fileID: 720890690}
 --- !u!50 &2069354868
 Rigidbody2D:
   serializedVersion: 4
