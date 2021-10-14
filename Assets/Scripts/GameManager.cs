@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     //reset the ball's position, and reset the players position if the score is 11
     public void ResetPosition(){
-        if (player1Score == 1 || player2Score == 1){
+        if (player1Score == 11 || player2Score == 11){
             gameOver = true;
             Time.timeScale = 0f;
             gameOverText.GetComponent<CanvasGroup>().alpha = 1;
