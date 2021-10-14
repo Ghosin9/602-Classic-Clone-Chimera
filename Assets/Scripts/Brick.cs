@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
-  public int health;
-  private int currentHealth;
+  public float health;
+  private float currentHealth;
+  private Color changeColor;
+  private SpriteRenderer mainColor;
 
 
   // Start is called before the first frame update
   void Start()
   {
+    //sprite = GetComponent<SpriteRenderer>().color.a;
+    mainColor = GetComponent<SpriteRenderer>();
     setHeath();
   }
   private void setHeath() {
@@ -18,6 +22,12 @@ public class Brick : MonoBehaviour
   }
   private void lowerHealth() { 
     currentHealth--;
+
+    //Changing Alpha Depending on Health
+    //Debug.Log(alphaToSubtract);
+    //alphaToSubtract = 1f/health;
+    mainColor.color = new Color(mainColor.color.r,mainColor.color.g,mainColor.color.b, (float)(currentHealth/health));
+
     if (currentHealth <= 0) Destroy(this.gameObject);
   }
 
