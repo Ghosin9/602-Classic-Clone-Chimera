@@ -9,6 +9,7 @@ public class Ball : MonoBehaviour
     public Rigidbody2D rb;
     //start position of the ball
     public Vector3 startPos;
+    public GameObject powerUp;
 
     // Start is called before the first frame update
     void Start()
@@ -44,4 +45,13 @@ public class Ball : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         Launch();
     }
+
+    //public void OnCollisionEnter2D(Collision2D collider)
+   // {
+      //  if(collider.gameObject.CompareTag("Brick"))
+       // {
+        //    StartCoroutine(powerUp.GetComponent<PowerUp>().RespawnPowerUp());
+       // }
+
+   // }
 }

@@ -5,7 +5,9 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour
 {
     //area in which the food will spawn
-    public BoxCollider2D gridArea;
+    public BoxCollider2D gridArea1;
+    public BoxCollider2D gridArea2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,26 +22,41 @@ public class PowerUp : MonoBehaviour
     }
 
     void RandomizePosition(){
+        float z = Random.Range(0, 2);
         //take the bounds of the grid and then spawn the food within those bounds
-        Bounds bounds = this.gridArea.bounds;
+        if (z == 0)
+        {
+            Bounds bounds = this.gridArea1.bounds;
 
-        float x = Random.Range(bounds.min.x, bounds.max.x);
-        float y = Random.Range(bounds.min.y, bounds.max.y);
+            float x = Random.Range(bounds.min.x, bounds.max.x);
+            float y = Random.Range(bounds.min.y, bounds.max.y);
+            this.transform.position = new Vector3(Mathf.Round(x), Mathf.Round(y), 0f);
 
-        this.transform.position = new Vector3(Mathf.Round(x), Mathf.Round(y), 0f);
+        }
+        else
+        {
+            Bounds bounds = this.gridArea2.bounds;
+
+            float x = Random.Range(bounds.min.x, bounds.max.x);
+            float y = Random.Range(bounds.min.y, bounds.max.y);
+            this.transform.position = new Vector3(Mathf.Round(x), Mathf.Round(y), 0f);
+
+        }
+
     }
 
     public void OnTriggerEnter2D(Collider2D collider){
         if (collider.gameObject.CompareTag("Player")){
             // move ball off camera, then call respawn
             this.transform.position = new Vector3(10.0f, 10.0f, 0.0f);
-            StartCoroutine(RespawnPowerUp()) ;
+            collider.GetComponent<PlayerController>().isPoweredUp = true;
+            StartCoroutine(RespawnPowerUp());
         }
     }
     
-    IEnumerator RespawnPowerUp(){
+    public IEnumerator RespawnPowerUp(){
         //wait a second and then launch the ball
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(10.0f);
         RandomizePosition();
     }
 }

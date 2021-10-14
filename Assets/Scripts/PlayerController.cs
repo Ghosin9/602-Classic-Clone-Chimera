@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool isPoweredUp;
     //bool for which player you are
     public bool playerNum;
     //speed of player

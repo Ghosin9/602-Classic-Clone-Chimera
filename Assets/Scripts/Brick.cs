@@ -8,6 +8,8 @@ public class Brick : MonoBehaviour
   private float currentHealth;
   private Color changeColor;
   private SpriteRenderer mainColor;
+    public GameObject p;
+
 
 
   // Start is called before the first frame update
@@ -21,6 +23,11 @@ public class Brick : MonoBehaviour
     currentHealth = health;
   }
   private void lowerHealth() { 
+        if(p.GetComponent<PlayerController>().isPoweredUp)
+        {
+            currentHealth = 0;
+            p.GetComponent<PlayerController>().isPoweredUp = false;
+        }
     currentHealth--;
 
     //Changing Alpha Depending on Health
