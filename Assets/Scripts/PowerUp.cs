@@ -12,7 +12,7 @@ public class PowerUp : MonoBehaviour
     void Start()
     {
         //randomly spawn the ball upon spawn
-        RandomizePosition();
+        RandomizePosition(Random.Range(0, 2));
     }
 
     // Update is called once per frame
@@ -21,8 +21,8 @@ public class PowerUp : MonoBehaviour
         
     }
 
-    void RandomizePosition(){
-        float z = Random.Range(0, 2);
+    public void RandomizePosition(float z){
+        // float z = Random.Range(0, 2);
         //take the bounds of the grid and then spawn the food within those bounds
         if (z == 0)
         {
@@ -50,13 +50,13 @@ public class PowerUp : MonoBehaviour
             // move ball off camera, then call respawn
             this.transform.position = new Vector3(10.0f, 10.0f, 0.0f);
             collider.GetComponent<PlayerController>().isPoweredUp = true;
-            StartCoroutine(RespawnPowerUp());
+            // StartCoroutine(RespawnPowerUp());
         }
     }
     
     public IEnumerator RespawnPowerUp(){
         //wait a second and then launch the ball
-        yield return new WaitForSeconds(10.0f);
-        RandomizePosition();
+        yield return new WaitForSeconds(1.0f);
+        RandomizePosition(Random.Range(0,2));
     }
 }
