@@ -41,7 +41,7 @@ public class Ball : MonoBehaviour
 
     IEnumerator LaunchBall(){
         //wait a second and then launch the ball
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.0f);
         Launch();
     }
 }

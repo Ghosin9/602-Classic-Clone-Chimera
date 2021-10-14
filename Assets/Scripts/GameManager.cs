@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [Header("Players")]
     public GameObject player1;
     public GameObject player2;
+    // public bool ballPowerUp;
+    // public bool ballPowerUp;
 
     [Header("Goals")]
     public GameObject player1Goal;

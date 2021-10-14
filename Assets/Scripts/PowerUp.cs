@@ -6,7 +6,6 @@ public class PowerUp : MonoBehaviour
 {
     //area in which the food will spawn
     public BoxCollider2D gridArea;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +31,15 @@ public class PowerUp : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider){
         if (collider.gameObject.CompareTag("Player")){
-            //when the player collides, randomize position and then grow the player
-            RandomizePosition();
-
-            collider.GetComponent<PlayerController>().Grow();
+            // move ball off camera, then call respawn
+            this.transform.position = new Vector3(10.0f, 10.0f, 0.0f);
+            StartCoroutine(RespawnPowerUp()) ;
         }
+    }
+    
+    IEnumerator RespawnPowerUp(){
+        //wait a second and then launch the ball
+        yield return new WaitForSeconds(1.0f);
+        RandomizePosition();
     }
 }
